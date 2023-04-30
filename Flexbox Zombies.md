@@ -524,27 +524,27 @@ crossbow {
   flex-shrink:2;
 }
 
-6.5:
+### 6.5:
 .target:nth-of-type(2), .target:nth-of-type(3) {
   flex-shrink:2;
 }
 
-6.6:
+### 6.6:
 .target:nth-of-type(3) {
   flex-shrink:3
 }
 
-6.7:
+### 6.7:
 .target:nth-of-type(3) {
   flex-shrink:0;
 }
 
-6.8:
+### 6.8:
 .target.goo {
   flex-grow:1;
 }
 
-6.10:
+### 6.10:
 crossbow {
   display:flex;
   align-items:flex-start;
@@ -558,5 +558,596 @@ crossbow {
   align-self:center;
 }
 
-6.11:
+### 6.11:
+crossbow {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
 
+.target:nth-of-type(2) {
+  align-self:stretch;
+}
+
+.target:nth-of-type(3) {
+  flex-shrink:0;
+  flex-grow:1;
+}
+
+### 6.12:
+crossbow {
+  display:flex;
+  flex-direction:row-reverse;
+  align-items:flex-start; 
+}
+
+.target:nth-of-type(1) {
+  align-self: center;
+}
+
+.target:nth-of-type(2) {
+  flex-shrink:0;
+  align-self:center;
+  flex-grow:1;
+}
+
+### 6.13:
+crossbow {
+  display:flex;
+  flex-direction:column-reverse;
+  align-items:flex-start;
+}
+
+.target:nth-of-type(3) {
+  flex-grow:1;
+  flex-shrink:0;
+}
+
+### 6.14:
+crossbow {
+  display:flex;
+  align-items:flex-start;
+}
+
+.target:nth-of-type(2) {
+  flex-grow:2;
+}
+
+### 6.15:
+crossbow {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.target:nth-of-type(1) {
+  flex-shrink:2;
+  
+}
+
+.target:nth-of-type(2) {
+  flex-shrink:0;
+  flex-grow:1;
+}
+
+### 6.16:
+crossbow {
+  display:flex;
+  flex-direction:column-reverse;
+
+}
+
+.target.goo {
+  flex-grow:1; 
+}
+
+.target:nth-of-type(1) {
+  align-self:flex-end;
+}
+
+.target:nth-of-type(2) {
+  flex-shrink:2;
+}
+
+.target:nth-of-type(3) {
+  align-self:flex-start;
+  flex-grow:2;
+}
+
+### 6.17:
+crossbow {
+  display:flex;
+  align-items:flex-end;
+}
+
+.target.goo {
+  align-self:flex-start;
+  flex-grow:1;
+}
+
+.target:nth-of-type(1) {
+  flex-shrink:0;
+  flex-grow:3;
+}
+
+.target:nth-of-type(3) {
+  align-self:stretch;
+  flex-shrink:2;
+  flex-grow:1;
+}
+
+### 6.18:
+crossbow {
+  display:flex;
+  flex-direction:row-reverse;
+  align-items:flex-end;
+}
+
+.target:nth-of-type(2) {
+  align-self:stretch;
+  flex-shrink:2;
+  flex-grow:2;
+}
+
+.target:nth-of-type(3) {
+  flex-shrink:0;
+  flex-grow:1;
+  align-self:flex-start;
+}
+
+### 6.19:
+crossbow {
+   display:flex;
+  flex-direction:column;
+
+}
+.target:nth-of-type(1) {
+  flex-shrink:0;
+}
+
+.target:nth-of-type(2) {
+  flex-grow:1;
+}
+
+.target:nth-of-type(3) {
+  align-self:flex-end;
+}
+
+## Chapter 7:
+7.3:
+flex-basis:300px;
+(flex-basis is kind of a new and improved version of width)
+
+7.4:
+flex-basis:100px;
+(flex-basis dominates any width setting)
+
+7.5:
+min-width:300px;
+(min-width is like lower limit of flex-basis)
+
+7.6:
+max-width:100px;
+
+7.7:
+flex-basis:300px;
+(flex-basis acts along main axis always, so horizontally for width and vertically for height)
+
+7.8:
+flex-basis:50%;
+
+7.9:
+flex-basis:300px;
+(it's like a starting point, an ideal size when no shrinking or growing)
+
+7.10:
+flex-basis:auto , implies, no flex-basis set and width setting is taken by default
+
+7.11:
+flex-shrink:2;
+
+7.12:
+flex-grow:1;
+
+7.14:
+crossbow {
+  display:flex;
+  flex-direction:row-reverse;
+  align-items:flex-start;
+  justify-content:flex-end;
+}
+
+.target.goo {
+  flex-basis:300px;
+}
+
+7.15:
+crossbow {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  justify-content:center;
+}
+
+.target.goo {
+  flex-basis:75px;
+}
+
+7.16:
+crossbow {
+  display:flex;
+  flex-direction:column-reverse;
+  align-items:center;
+  justify-content:flex-start;
+}
+
+.target.goo {
+    flex-basis:500px;
+}
+
+7.17:
+crossbow {
+  display:flex;
+  align-items:center;
+  
+}
+
+.target.goo {
+    flex-basis:50%;
+}
+
+.target:nth-of-type(3) {
+  align-self:stretch;
+}
+
+7.18:
+crossbow {
+ display:flex;
+  align-items:flex-end;  
+}
+
+.target.goo {
+  align-self:center;
+  flex-grow:1
+}
+
+.target:nth-of-type(3) {
+  align-self:flex-start;
+  flex-basis:75px;
+  flex-grow:0
+}
+
+7.19:
+crossbow {
+  display:flex;
+  flex-direction:column-reverse;
+  align-items:center;
+}
+
+.target.goo {
+  flex-grow:1;
+}
+
+.target:nth-of-type(2) {
+  max-height:200px;
+}
+(max-height bcoz main axis is vertical)
+
+7.20:
+crossbow {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.target.goo {
+  flex-shrink:1; 
+  flex-basis:200px;
+}
+
+.target:nth-of-type(1) {
+  flex-shrink:0;
+}
+
+.target:nth-of-type(2) {
+  min-width:300px;
+}
+
+7.21:
+crossbow {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.target.goo {
+  flex-basis:250px;
+}
+
+.target:nth-of-type(1) {
+  flex-shrink:0;
+}
+
+7.22:
+crossbow {
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+}
+
+.target.goo {
+  flex-basis:200px;
+}
+
+.target:nth-of-type(2) {
+  flex-shrink:0;
+}
+
+7.23:
+crossbow {
+  display:flex;
+}
+
+.target.goo {
+  flex-basis:0;
+  flex-grow:1;
+}
+
+.target:nth-of-type(3) {
+  align-self:flex-start;
+}
+
+## Chapter 8:
+8.3:
+order:2;
+(lower order displayed closer)
+
+8.4:
+order:2;
+
+8.5:
+order:1;
+
+8.6:
+order:1;
+
+8.7:
+order:-1;
+
+8.8:
+.target.female {
+  order:1;
+}
+
+.target.goo {
+  order:2;
+}
+
+.target.male {
+order:3;
+}
+
+8.10:
+crossbow {
+  display:flex;
+  justify-content:flex-end;
+  align-items:flex-start;
+}
+
+.target.goo {
+  order:-1;
+  flex-grow:1;
+  align-self:stretch;
+} 
+
+8.11:
+crossbow {
+  display:flex;
+  flex-direction:row-reverse;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+.target.goo {
+  order:1;
+  flex-basis:350px;
+  align-self:flex-end;
+} 
+
+8.12:
+crossbow {
+  display:flex;
+  flex-direction:column-reverse;
+  align-items:center;
+}
+
+.target.goo {
+  order:-1;
+  align-self:stretch;
+} 
+
+8.13:
+crossbow {
+   display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+    
+}
+
+.target.goo {
+  flex-grow:1;
+  order:1;
+  align-self:stretch;
+  flex-basis:75px;
+}
+
+8.14:
+crossbow {
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.target.female {
+  order:2
+}
+  
+.target.goo {
+  order:3;
+  
+}
+
+.target.male {
+  order:1;
+}
+
+8.15:
+crossbow {
+  display:flex;
+  align-items:center;
+}
+
+.target.goo {
+  order:2;
+  flex-grow:1;
+}
+  
+.target.male {
+  order:1;
+}
+
+8.16:
+crossbow {
+  display:flex;
+  align-items:flex-start;
+}
+
+.target.female {
+  order:-1;
+}
+  
+.target:nth-of-type(1) {
+  align-self:flex-end;
+  flex-grow:1;
+  flex-shrink:0;
+}
+(order has no effect on nth of type numbering)
+
+## Chapter-9:
+9.3:
+flex-wrap:wrap;
+
+9.4:
+flex-wrap:wrap;
+
+9.5:
+flex-wrap:wrap;
+
+9.6:
+ align-items: flex-end;
+  flex-wrap:wrap-reverse;
+  (wrap-reverse reverses sense of align-items)
+
+9.7:
+crossbow {
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+.target.goo {
+  flex-grow:1;
+}
+
+9.8:
+flex-wrap:wrap;
+(wrap first, shrink second)
+
+9.9:
+justify-content: flex-end;
+  flex-wrap:wrap;
+
+9.11:
+crossbow {
+  display:flex;
+  flex-direction:row-reverse;
+  flex-wrap:wrap;
+  align-items: flex-start;
+}
+
+9.12:
+crossbow {
+  display:flex;
+  flex-direction:column-reverse;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+9.13:
+crossbow {
+  display:flex;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+
+.target:nth-of-type(2) {
+  align-self:flex-end;
+}
+
+9.14:
+crossbow {
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+.target.goo {
+  flex-basis:50%;
+}
+
+9.15:
+crossbow {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+9.16:
+crossbow {
+  display:flex;
+  flex-direction:column-reverse;
+  align-items:flex-end;
+  flex-wrap:wrap-reverse;
+}
+(flex-start wala effect flex-end se aayega coz wrap reverse)
+
+9.17:
+crossbow {
+  display:flex;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  justify-content:center;
+  
+}
+
+.target:nth-of-type(2) {
+  flex-grow:1;
+}
+
+9.18:
+crossbow {
+  display:flex;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.target:nth-of-type(2) {
+  flex-grow:1;
+}
+
+.target:nth-of-type(3) {
+  flex-grow:1;
+}
