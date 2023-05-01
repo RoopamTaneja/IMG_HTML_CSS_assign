@@ -714,42 +714,42 @@ crossbow {
 }
 
 ## Chapter 7:
-7.3:
+### 7.3:
 flex-basis:300px;
 (flex-basis is kind of a new and improved version of width)
 
-7.4:
+### 7.4:
 flex-basis:100px;
 (flex-basis dominates any width setting)
 
-7.5:
+### 7.5:
 min-width:300px;
 (min-width is like lower limit of flex-basis)
 
-7.6:
+### 7.6:
 max-width:100px;
 
-7.7:
+### 7.7:
 flex-basis:300px;
 (flex-basis acts along main axis always, so horizontally for width and vertically for height)
 
-7.8:
+### 7.8:
 flex-basis:50%;
 
-7.9:
+### 7.9:
 flex-basis:300px;
 (it's like a starting point, an ideal size when no shrinking or growing)
 
-7.10:
+### 7.10:
 flex-basis:auto , implies, no flex-basis set and width setting is taken by default
 
-7.11:
+### 7.11:
 flex-shrink:2;
 
-7.12:
+### 7.12:
 flex-grow:1;
 
-7.14:
+### 7.14:
 crossbow {
   display:flex;
   flex-direction:row-reverse;
@@ -761,7 +761,7 @@ crossbow {
   flex-basis:300px;
 }
 
-7.15:
+### 7.15:
 crossbow {
   display:flex;
   flex-direction:column;
@@ -773,7 +773,7 @@ crossbow {
   flex-basis:75px;
 }
 
-7.16:
+### 7.16:
 crossbow {
   display:flex;
   flex-direction:column-reverse;
@@ -785,7 +785,7 @@ crossbow {
     flex-basis:500px;
 }
 
-7.17:
+### 7.17:
 crossbow {
   display:flex;
   align-items:center;
@@ -800,9 +800,9 @@ crossbow {
   align-self:stretch;
 }
 
-7.18:
+### 7.18:
 crossbow {
- display:flex;
+  display:flex;
   align-items:flex-end;  
 }
 
@@ -817,7 +817,7 @@ crossbow {
   flex-grow:0
 }
 
-7.19:
+### 7.19:
 crossbow {
   display:flex;
   flex-direction:column-reverse;
@@ -833,7 +833,7 @@ crossbow {
 }
 (max-height bcoz main axis is vertical)
 
-7.20:
+### 7.20:
 crossbow {
   display:flex;
   align-items:center;
@@ -853,7 +853,7 @@ crossbow {
   min-width:300px;
 }
 
-7.21:
+### 7.21:
 crossbow {
   display:flex;
   flex-direction:column;
@@ -868,7 +868,7 @@ crossbow {
   flex-shrink:0;
 }
 
-7.22:
+### 7.22:
 crossbow {
   display:flex;
   justify-content:flex-end;
@@ -883,7 +883,7 @@ crossbow {
   flex-shrink:0;
 }
 
-7.23:
+### 7.23:
 crossbow {
   display:flex;
 }
@@ -898,23 +898,23 @@ crossbow {
 }
 
 ## Chapter 8:
-8.3:
+### 8.3:
 order:2;
 (lower order displayed closer)
 
-8.4:
+### 8.4:
 order:2;
 
-8.5:
+### 8.5:
 order:1;
 
-8.6:
+### 8.6:
 order:1;
 
-8.7:
+### 8.7:
 order:-1;
 
-8.8:
+### 8.8:
 .target.female {
   order:1;
 }
@@ -924,10 +924,10 @@ order:-1;
 }
 
 .target.male {
-order:3;
+  order:3;
 }
 
-8.10:
+### 8.10:
 crossbow {
   display:flex;
   justify-content:flex-end;
@@ -940,7 +940,7 @@ crossbow {
   align-self:stretch;
 } 
 
-8.11:
+### 8.11:
 crossbow {
   display:flex;
   flex-direction:row-reverse;
@@ -954,7 +954,7 @@ crossbow {
   align-self:flex-end;
 } 
 
-8.12:
+### 8.12:
 crossbow {
   display:flex;
   flex-direction:column-reverse;
@@ -966,9 +966,9 @@ crossbow {
   align-self:stretch;
 } 
 
-8.13:
+### 8.13:
 crossbow {
-   display:flex;
+  display:flex;
   flex-direction:column;
   align-items:flex-end;
     
@@ -981,7 +981,7 @@ crossbow {
   flex-basis:75px;
 }
 
-8.14:
+### 8.14:
 crossbow {
   display:flex;
   align-items:center;
@@ -1001,7 +1001,7 @@ crossbow {
   order:1;
 }
 
-8.15:
+### 8.15:
 crossbow {
   display:flex;
   align-items:center;
@@ -1016,7 +1016,7 @@ crossbow {
   order:1;
 }
 
-8.16:
+### 8.16:
 crossbow {
   display:flex;
   align-items:flex-start;
@@ -1034,21 +1034,21 @@ crossbow {
 (order has no effect on nth of type numbering)
 
 ## Chapter-9:
-9.3:
+### 9.3:
 flex-wrap:wrap;
 
-9.4:
+### 9.4:
 flex-wrap:wrap;
 
-9.5:
+### 9.5:
 flex-wrap:wrap;
 
-9.6:
+### 9.6:
  align-items: flex-end;
   flex-wrap:wrap-reverse;
   (wrap-reverse reverses sense of align-items)
 
-9.7:
+### 9.7:
 crossbow {
   display: flex;
   align-items: center;
@@ -1059,15 +1059,15 @@ crossbow {
   flex-grow:1;
 }
 
-9.8:
+### 9.8:
 flex-wrap:wrap;
 (wrap first, shrink second)
 
-9.9:
+### 9.9:
 justify-content: flex-end;
   flex-wrap:wrap;
 
-9.11:
+### 9.11:
 crossbow {
   display:flex;
   flex-direction:row-reverse;
@@ -1075,7 +1075,7 @@ crossbow {
   align-items: flex-start;
 }
 
-9.12:
+### 9.12:
 crossbow {
   display:flex;
   flex-direction:column-reverse;
@@ -1083,7 +1083,7 @@ crossbow {
   flex-wrap:wrap;
 }
 
-9.13:
+### 9.13:
 crossbow {
   display:flex;
   align-items:flex-start;
@@ -1094,7 +1094,7 @@ crossbow {
   align-self:flex-end;
 }
 
-9.14:
+### 9.14:
 crossbow {
   display: flex;
   align-items: center;
@@ -1105,7 +1105,7 @@ crossbow {
   flex-basis:50%;
 }
 
-9.15:
+### 9.15:
 crossbow {
   display:flex;
   flex-direction:column;
@@ -1114,7 +1114,7 @@ crossbow {
   flex-wrap:wrap;
 }
 
-9.16:
+### 9.16:
 crossbow {
   display:flex;
   flex-direction:column-reverse;
@@ -1123,20 +1123,19 @@ crossbow {
 }
 (flex-start wala effect flex-end se aayega coz wrap reverse)
 
-9.17:
+### 9.17:
 crossbow {
   display:flex;
   align-items:flex-start;
   flex-wrap:wrap;
   justify-content:center;
-  
 }
 
 .target:nth-of-type(2) {
   flex-grow:1;
 }
 
-9.18:
+### 9.18:
 crossbow {
   display:flex;
   align-items:flex-start;
@@ -1151,3 +1150,293 @@ crossbow {
 .target:nth-of-type(3) {
   flex-grow:1;
 }
+
+## Chapter-10:
+### 10.3:
+flex-wrap:wrap;
+(align-content is similar to align-items but it aligns wrapped lines, how the lines align with each other, has no effect if there's only single line)
+
+### 10.4:
+align-content:flex-start;
+
+### 10.5:
+align-content:flex-end;
+
+### 10.6:
+align-content:flex-end;
+(like align-items, align-content's direction depends on flex-direction)
+
+### 10.7:
+align-content:center;
+
+### 10.8:
+align-content:space-around;
+
+### 10.9:
+align-content:space-between;
+
+### 10.11:
+crossbow {
+  display:flex;
+  flex-direction:row-reverse;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  align-content:center;
+}
+
+### 10.12:
+crossbow {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-end;
+  align-content:flex-end;
+}
+
+### 10.13:
+crossbow {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  align-content:space-between;
+}
+
+.target:nth-of-type(2) {
+  flex-grow:1;
+}
+
+### 10.14:
+ crossbow {
+  display:flex;
+  flex-direction:column-reverse;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:flex-end;
+}
+
+### 10.15:
+crossbow {
+  display:flex;
+  flex-wrap:wrap;
+  align-content:flex-start;
+  align-items:flex-end;
+}
+
+### 10.16:
+crossbow {
+  display:flex;
+  flex-wrap:wrap;
+  align-content:center;
+  align-items:flex-end;
+  justify-content:flex-end;
+}
+
+.target:nth-of-type(3) {
+  flex-grow:1;
+}
+
+## Chapter-11:
+### 11.3:
+flex:1 1 300px;
+(shorthand for flex-grow,flex-shrink,flex-basis - gsb)
+
+### 11.4:
+flex: 1 0 auto;
+(default of flex-basis in this shorthand is 0px)
+
+### 11.5:
+flex: 0 300px;
+(no 2nd parameter implies flex-shrink:1)
+
+### 11.6:
+flex:1;
+(need to set atleast flex-grow)
+
+### 11.7:
+flex:auto;
+(grow - 1, shrink - 1, basis - auto)
+
+### 11.8:
+flex:none;
+(grow - 0, shrink - 0, basis - auto)
+
+### 11.9:
+flex-flow:column wrap;
+
+### 11.11:
+crossbow {
+  display:flex;
+  flex-flow:row-reverse;
+  justify-content:flex-end;
+  align-items:flex-start;
+}
+
+.target.goo {
+  flex:0 300px;
+}
+
+### 11.12:
+crossbow {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.target:nth-of-type(1) {
+  flex:none;
+}
+
+### 11.13:
+crossbow {
+  display:flex;
+  align-items:center;
+}
+
+.target.goo {
+  flex: 0 0 25%;
+}
+
+.target:nth-of-type(3) {
+  align-self:stretch;
+}
+
+### 11.14:
+crossbow {
+  display:flex;
+  flex-flow:column-reverse;
+  justify-content:flex-end;
+  align-items:flex-end;
+}
+
+.target:nth-of-type(3) {
+  flex:auto;
+}
+
+### 11.15:
+crossbow {
+  display:flex;
+  flex-flow:row-reverse wrap;
+  align-items:flex-start;
+  align-content:center;
+}
+
+## Chapter-12:
+### 12.3:
+crossbow {
+  display:flex;
+  flex-flow:row-reverse;
+  justify-content:center;
+  align-items:center;
+}
+
+### 12.4:
+crossbow {
+  display:flex;
+  align-items:flex-end;
+}
+
+.target.goo {
+  flex-grow:1;
+  align-self:stretch;
+}
+
+### 12.5:
+crossbow {
+  display:flex;
+  flex-flow:column-reverse;
+  justify-content:flex-end;
+  align-items:flex-end;
+}
+
+.target.female {
+    align-self:center;
+}
+
+### 12.6:
+crossbow { 
+  display:flex;
+  flex-flow:row-reverse;
+  justify-content:flex-end;
+  align-items:flex-end;
+}
+
+.target:nth-of-type(3) {
+  align-self:flex-start;
+}
+
+### 12.7:
+crossbow {
+  display:flex;
+  flex-flow:wrap;
+  align-items:flex-start; 
+}
+
+.target:nth-of-type(2) {
+  flex-grow:1;
+}
+
+### 12.8:
+crossbow {
+  display:flex;
+  flex-flow:wrap;
+  align-items:flex-end; 
+}
+.target:nth-of-type(2) {
+  flex-grow:1;
+}
+
+### 12.9:
+crossbow {
+  display:flex;
+  flex-flow:column;
+  justify-content:flex-end;
+  align-items:center;
+}
+
+.target:nth-of-type(2) {
+    align-self:stretch;
+}
+
+.target:nth-of-type(3) {
+  flex-grow:1;
+  flex-shrink:0;
+}
+
+### 12.10:
+crossbow {
+  display:flex;
+  flex-flow:row-reverse;
+  justify-content:flex-end;
+  align-items:flex-end;
+}
+
+.target:nth-of-type(2) {
+  align-self:stretch;
+  flex-grow:1;
+  flex-shrink:2;
+}
+
+.target:nth-of-type(3) {
+  align-self:flex-start;
+}
+
+.target:nth-of-type(4) {
+  
+}
+
+### 12.11:
+crossbow {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.target.dave {
+  order:1;
+  align-self:flex-start;
+}
+  
+.target.goo {
+  align-self:flex-end;
+}
+
+![FBZ Completion](FBZ_Completion.png "Congrats")
