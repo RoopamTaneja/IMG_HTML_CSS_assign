@@ -42,28 +42,20 @@
     margin-top: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: center;
+    gap: 0.5rem;
 }
 
-/* .items {
-    text-transform: uppercase;
-    font-family: Georgia, 'Times New Roman', Times, serif
+.items {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-clip: border-box;
 }
 
-.items a {
-    color: black;
-    text-decoration: none;
-}
-
-.items a:hover {
-    text-decoration: underline;
+.items:hover div {
+    background-color: #f0f1f6;
 }
 
 .list {
     display: none;
 }
-
-#insti:hover .list {
-    display: block;
-} */
