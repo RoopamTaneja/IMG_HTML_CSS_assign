@@ -45,7 +45,6 @@
     grid-column-gap: 2.5rem;
 }
 
-.side-items {}
 
 .fontbox {
     display: flex;
@@ -69,6 +68,14 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+}
+
+.search {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    align-self: center;
 }
 
 .items {
