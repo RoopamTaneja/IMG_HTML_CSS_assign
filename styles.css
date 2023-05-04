@@ -26,6 +26,7 @@
     align-items: center;
     margin-right: 7rem;
     margin-top: 3rem;
+    column-gap: 4%;
 }
 
 .line {
@@ -37,18 +38,28 @@
     padding-top: 2%;
 }
 
-.side{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 10%;
-    grid-template-rows: 1fr 10px 1fr;
+.side {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 20%;
+    grid-template-rows: 1fr 0.01fr 1fr;
+    grid-column-gap: 2.5rem;
 }
-.side-items
-{
-        
-}
-.fontbox
-{
+
+.side-items {}
+
+.fontbox {
     display: flex;
+    gap: 0% 26%;
+}
+
+.abox {
+    display: flex;
+    gap: 0% 10%;
+}
+
+.langbox {
+    display: flex;
+    gap: 0% 5%;
 }
 
 .navbar {
@@ -73,6 +84,7 @@
 .list {
     display: none;
 }
-img{
+
+img {
     max-width: 100%;
 }
