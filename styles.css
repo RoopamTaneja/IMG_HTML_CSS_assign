@@ -37,6 +37,20 @@
     padding-top: 2%;
 }
 
+.side{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 10%;
+    grid-template-rows: 1fr 10px 1fr;
+}
+.side-items
+{
+        
+}
+.fontbox
+{
+    display: flex;
+}
+
 .navbar {
     padding: 0 7rem 0 7.5rem;
     margin-top: 2rem;
@@ -58,4 +72,7 @@
 
 .list {
     display: none;
+}
+img{
+    max-width: 100%;
 }
