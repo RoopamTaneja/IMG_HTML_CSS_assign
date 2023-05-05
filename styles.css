@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+/* 
+img {
+    max-width: 100%;
+} */
+
 .headline {
     display: flex;
     align-items: center;
@@ -30,7 +35,7 @@
 }
 
 .line {
-    margin-right: 8.5rem;
+    margin-right: 8rem;
     margin-left: 8rem;
 }
 
@@ -41,33 +46,30 @@
 .side {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 20%;
-    grid-template-rows: 1fr 0.01fr 1fr;
-    grid-column-gap: 2.5rem;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 2.25rem;
+    align-items: center;
+    justify-items: center;
+    row-gap: 18%;
 }
 
 
 .fontbox {
     display: flex;
     gap: 0% 26%;
+    justify-content: center;
 }
 
 .abox {
     display: flex;
     gap: 0% 10%;
+    justify-content: center;
 }
 
 .langbox {
     display: flex;
     gap: 0% 5%;
-}
-
-.navbar {
-    padding: 0 7rem 0 7.5rem;
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 0.5rem;
 }
 
 .search {
@@ -75,13 +77,27 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 4;
+    justify-self: start;
     align-self: center;
+    position: relative;
+}
+
+.search img {
+    position: relative;
+    right: 120%;
+}
+
+.navbar {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .items {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    background-clip: border-box;
+    display: flex;
+    flex-basis: 8em;
+    justify-content: center;
 }
 
 .items:hover div {
@@ -90,8 +106,4 @@
 
 .list {
     display: none;
-}
-
-img {
-    max-width: 100%;
 }
