@@ -214,4 +214,8 @@ a.dropdwn {
     .side {
         display: none;
     }
+
+    .v-class-resp {
+        opacity: 0;
+    }
 }

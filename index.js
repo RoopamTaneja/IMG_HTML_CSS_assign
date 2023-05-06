@@ -69,3 +69,9 @@ function rsshow() {
     }
     document.getElementById("resources").style.display = "block";
 }
+
+navbar = document.querySelector('.navbar');
+burger = document.getElementById('ham');
+burger.addEventListener('click', () => {
+    navbar.classList.toggle('v-class-resp');
+})
