@@ -45,9 +45,19 @@ img {
 }
 
 .line {
-    margin-right: 9vw;
-    margin-left: 9vw;
-    text-align: center;
+    margin: auto;
+    height: 0.05em;
+    width: 81vw;
+    margin-top: 1%;
+    background-color: black;
+}
+
+.line-sm {
+    width: 16em;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .g20 {
@@ -57,7 +67,7 @@ img {
 .side {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 20%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1% 1fr;
     grid-column-gap: 2rem;
     align-items: center;
     justify-items: center;
@@ -97,6 +107,26 @@ img {
     justify-content: center;
 }
 
+.colorbox {
+    height: 2em;
+    width: 2em;
+    background-color: #0067b3;
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#light_a {
+    border: 2px solid #0067b3;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+}
+
+
 .langbox {
     display: flex;
     gap: 0% 5%;
@@ -116,7 +146,7 @@ img {
 
 .search img {
     position: relative;
-    right: 120%;
+    right: 83%;
 }
 
 .navbar {
@@ -154,13 +184,27 @@ a.dropdwn {
 }
 
 @media only screen and (max-width : 1150px) {
-    #ham
-    {
+    #ham {
         display: block;
     }
+
+    .flex1 {
+        margin-left: 0.5rem;
+        width: 75%;
+    }
+
+    .flex2 {
+        margin-right: 0.5rem;
+        width: 25%
+    }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .line {
+        display: none;
     }
 
     .intro-text img {
