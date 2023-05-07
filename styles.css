@@ -161,20 +161,35 @@ img {
     display: flex;
     justify-content: center;
     font-size: 1em;
-
+    flex-direction: column;
 }
 
 .items:hover div {
     background-color: #f0f1f6;
+    font-weight: bold;
 }
 
-a.dropdwn {
+div.dropdwn a {
     text-decoration: none;
     color: black;
 }
 
+div.dropdwn a:hover {
+    font-weight: bold;
+}
+
 .list {
     display: none;
+    background-color: #f0f1f6;
+    width: 12em;
+}
+
+.dropdwn {
+    display: flex;
+}
+
+#acads {
+    width: 20em;
 }
 
 @media only screen and (max-width : 1290px) {
@@ -199,8 +214,11 @@ a.dropdwn {
     }
 
     .navbar {
+        position: relative;
         flex-direction: column;
         align-items: flex-start;
+        width: fit-content;
+        padding-left: 2%;
     }
 
     .line {
@@ -217,5 +235,19 @@ a.dropdwn {
 
     .v-class-resp {
         opacity: 0;
+    }
+
+    .navbar>div.items>div.list>ul {
+        position: absolute;
+        font-size: 0.8em;
+        overflow: hidden;
+    }
+
+    .navbar>div.items>div.list>ul.visible {
+        width: 100%;
+        height: 100%;
+        left: 75%;
+        top: 0%;
+        background-color: #f0f1f6;
     }
 }
