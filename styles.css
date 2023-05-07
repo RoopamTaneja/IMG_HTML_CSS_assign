@@ -192,6 +192,11 @@ div.dropdwn a:hover {
     width: 20em;
 }
 
+.navbar>div.items>div.list>ul {
+    position: absolute;
+    overflow: hidden;
+}
+
 @media only screen and (max-width : 1290px) {
     .intro-text {
         font-size: 0.8em;
@@ -248,6 +253,7 @@ div.dropdwn a:hover {
         height: 100%;
         left: 75%;
         top: 0%;
+        padding-left: 2%;
         background-color: #f0f1f6;
     }
 }
